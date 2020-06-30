@@ -1,0 +1,86 @@
+<!DOCTYPE html><!-- marca la version 5 de html -->
+<html lang="es">
+<!-- marca el idioma español -->
+
+<head>
+    <meta charset="utf-8"><!-- inclusion de caracteres especiales -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- viwpart para que se adapte la pagina al celular.  -->
+    <title>Document</title><!-- titulo de la pestaña -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <!-- incluimo tipografia Monzerrat -->
+    <!--<link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css"> viculo y utilizo un archivo de boostrap-->
+    <link rel="stylesheet" href="css/fontawesome/css/all.min.css"><!-- libreria css para iconos-->
+    <link rel="stylesheet" href="css/fontawesome/css/fontawesome.min.css"><!-- libreria css para iconos-->
+    <link rel="stylesheet" href="css/style.css"><!-- vincular css con html. href es ruta de archivo -->
+   
+</head>
+
+<body>
+    <!--encabezado: headre y nav. cuerpo : article o div. pie de pagina : footer-->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Tienda</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- id es un identificador-->
+
+    <!-- elemento div : contenedor q agrupa-->
+    <section>
+        <h1 id="inicio">Tienda de productos</h1> <!-- lorem es texto de relleno -->
+
+
+        <img src="imagenes/phonee.jpg" style="width: 1400px; height: 600px;"/>
+    
+        <h2>Ofertas 30%!!!!! </h2>
+
+        <div class="producto">
+            <!-- listas del supermercado -->
+
+            <h3>TV Samsung HD</h3>
+            <img src="imagenes/tvsmasung.jpg" alt="smattv" style="margin: 3px 20px 2px 15px;">
+            <ul>
+                <li><span>precio:</span><mark>$49.999 USD</mark></li>
+                <li><span>modelo:</span> tr423r4y8</li>
+                <li><span>marca:</span> samsung</li>
+                <button type="submit" id="btnEnviar" name="btnEnviar" style="margin: 5px; padding: 7px 40px; border:solid 1px;">Comprar</button>
+            </ul>    
+        </div>
+
+        <div class="producto">
+            <h3>Heladera</h3>
+            <img src="imagenes/heladera.jpg" alt="heladera" style="margin: 3px 20px 2px 35px;">
+            <ul>
+                <li><span>precio:</span><mark> $38.999 USD</mark></li>
+                <li><span>modelo:</span> Heladera</li>
+                <li><span>marca:</span> eletrolux</li>
+                <button type="submit" id="btnEnviar" name="btnEnviar" style="margin: 5px; padding: 7px 40px; border:solid 1px;">Comprar</button>
+            </ul>
+        </div>
+
+        <div class="producto">
+            <h3>Cafetera</h3>
+            <img src="imagenes/cafetera.jpg" alt="cafetera" style="margin: 3px 30px 2px 35px;">
+            <ul>
+                <li><span>precio:</span><mark> $131.999 USD</mark></li>
+                <li><span>modelo:</span> 73289h</li>
+                <li><span>marca:</span> 99990p</li>
+                <button type="submit" id="btnEnviar" name="btnEnviar" style="margin: 5px; padding: 7px 40px; border:solid 1px;">Comprar</button>
+            </ul>
+        </div>
+
+        <!-- inclustar un video de youtube -->
+        <iframe width="300" height="315" src="https://www.youtube.com/embed/q-7an6ZKLYY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; 
+        gyroscope; picture-in-picture" allowfullscreen style="margin: 0px 10px 0px 50px;"></iframe>
+
+        <div>
+        <a href="#inicio">Volver al inicio</a>
+    </div>
+    </section>
+</body>
+
+</html>

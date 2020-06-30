@@ -1,0 +1,11 @@
+.first{
+    background-color: rebeccapurple;
+    text-align: center;
+}
+
+div[class|="col"]{
+    border: 1px solid black;
+}
+.fluid{
+    background-color: blueviolet;
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Contacto</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <!-- incluimo tipografia Monzerrat -->
+    <link rel="stylesheet" href="css/fontawesome/css/all.min.css"><!-- libreria css para iconos-->
+    <link rel="stylesheet" href="css/fontawesome/css/fontawesome.min.css"><!-- libreria css para iconos-->
+    <link rel="stylesheet" href="css/style.css"><!-- vincular css con html. href es ruta de archivo -->
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">index</a></li>
+            <li><a href="nosotros.html">nosotros</a></li>
+            <li><a href="contacto.html">contacto</a></li>
+
+        </ul>
+    </nav>
+
+    <!-- display.(cajas en linea) inline : el elemento se comporta en linea, no recibe algunas propiedades del modelo en caja  -->
+    <!-- display.(cajas bloque sobre otro) block : define elemento de comportamiento de bloque abajo del otro -->
+    <!-- inline : block = define un elemento con comportamiento de semi-bloque, recibe "facilmente"
+    propiedades del modelo de caja.
+       node = oculta a un elemento visualmente. No lo elimina de la estructura de HTML. Solo lo visual -->
+
+    <!--float left yfloat right-->
+    <!--clear es la forma mas sencilla de romper las flotaciones-->
+    <!--over flow:hidden : para q sepa q hay elementos flotando-->
+    <!--padding es relleno o margen por adentro y margin es margen por afuera-->
+    <section>
+        
+        <!-- voy a crear div para jas de nombre -->
+        <h1>¡Escribinos te respondemos al instante!</h1>
+        <article>
+        <form action="">
+            <div>
+                <label for="txtNombre">Nombre:<span>*</span></label>
+                <input type="text" name="txtNombre" id="txtNombre" required>
+            </div>
+
+            <div>
+                <label for="txtCorreo">Correo:<span>*</span></label>
+                <input type="email" style="width : 310px " name="txtCorreo" id="txtCorreo" required>
+            </div>
+
+            <div>
+                <label for="txtTelefono">Telefono:<span>*</span></label>
+                <input type="text" name="txtTelefono" id="txtTelefono" placeholder="(011) 9999-9999" required>
+            </div>
+
+            <div>
+                <label for="">Pais de origen:</label>
+                <select name="lstPais" id="lstPais">
+                    <option value="" disabled selected>Seleccione</option>
+                    <optgroup label="Sudamerica">
+                        <option value="54">Argentina</option>
+                        <option value="55">Brasil</option>
+                        <option value="57">Colombia</option>
+                    </optgroup>
+                    <optgroup label="Europa">
+                        <option value="34">España</option>
+                        <option value="33">Francia</option>
+                        <option value="49">Alemania</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <div>
+                <label for="">Asunto:<span>*</span></label>
+                <select name="lstAsunto" id="lstAsunto" aria-placeholder="Seleccione">
+                    <option value="" disabled selected>Seleccione</option>
+                    <option value="ventas">Ventas</option>
+                    <option value="soporte">Soporte</option>
+                    <option value="webmaster">Webmaster</option>
+
+                </select>
+            </div>
+            <!-- empieza en minuscula y x cada nueva palabra comienza en mayuscula -->
+            <div>
+                <label for="">FechaNacimiento:</label>
+                <input type="date" name="txtFechaNac" id="txtFechaNac">
+            </div>
+
+            <div>
+                <label for="">Mensaje:<span>*</span></label>
+                <textarea name="txtMensaje" id="txtMensaje" cols="30" rows="10"></textarea>
+            </div>
+
+            <div>
+                <input type="checkbox" name="chkNovedades" id="chkNovedades">
+                <label for="chkNovedades" style="text-indent: 10px">Sos un re crack???</label>
+            </div>
+
+            <div>
+                <input type="checkbox" name="chkPrivacidad" id="chkPrivacidad">
+                <label for="chkPrivacidad">Acepta las politicas de privacidad y condiciones de uso</label>
+            </div>
+
+            <div>
+                <input type="checkbox" name="chk">
+                <label for="chkLicencias">Miras lo power rangers?????????</label>
+            </div>
+
+            <div>
+                <label for="">Sos mayor de edad?</label>
+                SI<input type="radio" name="optMayorEdad" id="optMayor">
+                NO<input type="radio" name="optMayorEdad" id="optMenor">
+            </div>
+
+            <div>
+                <button type="submit" id="btnEnviar" name="btnEnviar" style="margin: 5px; padding: 7px 40px; border:solid 3px;">ENVIAR</button>
+            </div>
+            <!-- 
+        <div>
+            <fieldset>
+                <fieldset>Datos personales</fieldset>
+                <div class="row form-group">
+                    <label for="txtNombre">Nombre</label>
+                    <input type="text" name="txtNombre" id="txtNombre" class="form-control">
+                </div>
+                <div class="row form-group">
+                    <label for="txtNombre">Edad:</label>
+                    <input type="text" name="txtEdad" id="txtEdad" class="form-control">
+                </div>
+            </fieldset>
+        </div>
+         -->
+        </form>
+    </article>
+    </section>
+    
+    <footer><!--para click al icono de wpp ponemos href y link-->
+        <a href="https://wa.link/pafj7i"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.linkedin.com/in/jesus-chejo-37969a171/"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com"><i class="fab fa-github"></i></a>
+    </footer>
+</body>
+</html>

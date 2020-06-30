@@ -1,0 +1,205 @@
+body {
+    margin: 0px;
+    background-color: #eeeeee;
+    font-family: 'Montserrat', sans-serif;
+}
+/* Comentario */
+h1{
+   text-align: center;
+   font-size: 36px;
+   color: royalblue;
+}
+
+h2{
+    font-weight: 600;
+    color: black;
+}
+/*hacemos la referencia indicando la etiquetas de html*/
+h3{
+    font-weight: 400;
+    color: black;
+    text-decoration: underline;/*texto subrayado*/
+    margin: 5px 30px 2px 30px ;
+    padding: 5px 30px 0px 30px;
+    text-align: center;
+}
+
+p{
+    font-size: 16px;
+    font-style: italic; /*cursiva*/
+    text-align: justify;
+    line-height: 26px;
+}
+
+p span{
+    font-weight: bold;/*letra negrita*/
+}
+
+ul span{
+    color: blueviolet;
+    line-height: 26px;
+}
+
+img{
+    height: 200px;/*alto*/
+}
+
+/*el div los que ehace es agrupar */
+.producto{
+
+    background-color: rgb(247, 249, 247 );
+    width: 300px;
+
+}
+/*txt es caja de texto. inout controles html*/
+
+/*creo una regla para los input*/
+input[type=text], input[type=date], input[type=email] select{
+
+    width: 300px;
+    font-size: 16px;
+    height: 20px;
+}
+
+textarea{
+    width: 500px;
+}
+
+input[type=checkbox]{
+    font-size: 0px;
+}
+
+button{
+    background-color:#3483fa;
+    font-size: 14px;
+}
+
+button:hover{
+    background-color: azure;
+    color: brown;
+    font-size: 14px;
+}
+
+nav li:hover{
+    background-color: seagreen;
+    color: rgb(112, 137, 121);
+}
+
+/*toma los span del formulario*/
+form span{
+    color: red;
+    font-weight: 900;
+}
+
+select{
+    width: 300px;
+    font-size: 16px;
+    height: 21px;
+}
+
+textarea{
+    resize: both;
+}
+
+input:focus{
+    background-color: rgb(146, 165, 165);
+}
+
+nav a:hover{
+    color: black
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin: 10px 0;  
+}
+
+li{
+    display: block;
+    list-style: none;
+    font-weight: 900;
+}
+
+nav ul{
+    background-color: rgb(134, 212, 212);
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px 20px;
+}
+
+section{
+    clear: both;
+    padding: 0 8%;
+}
+
+nav li{
+  float: left;
+  list-style: none;
+  width: 200px;
+  margin: 0px 30px 0px 90px;
+  padding: 5px 90px 5px 90px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  text-align: center;
+}
+/*insertar display block*/
+
+ul{
+    background-color: rgb(247, 249, 247 );
+    padding: 3px 80px 0px 30px;
+    text-align: center;
+    border: solid 1px;
+}
+
+div{
+    margin: 5px 20px 2px 30px ;
+    padding: 5px 30px 0px 30px;
+    /*modificar*/
+    display: inline-block;
+}
+
+image{
+    margin: 0px 30px 0px 30px ;
+    padding: 0px 30px 0px 30px;
+}
+
+input{
+    padding: 0px 000px 0px 0px;
+    height: 18px;
+}
+
+article{
+    display: block;
+    margin: 0px 850px 0px 0px;
+}
+/*Font awesome me da un paquete de iconos gratis(fuentes)*/
+/*max-widht, especifica que mientras se cumpla el ancho definido, se aplican las reglas css*/
+@media(max-widht: 960){
+    h1{
+        font-size: 20px;
+    }
+}
+
+footer{
+    background-color: rgb(134, 212, 212);
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+}
+
+footer i{
+    color: black;
+    font-size: 50px;
+    border: solid 1px;
+    border-radius: 13px;
+    position: relative;
+    cursor: pointer;
+    display: block;
+    padding: 10px 30px;
+    margin: 0px 5px 0px 5px;
+}
+
+
+
+
